@@ -1,7 +1,8 @@
 ---
 title: hexo使用说明
 date: 2019-10-13 14:42:05
-tags:
+tags: 其它
+thumbnail: /assets/images/front/thumbnails/1.jpg
 ---
 ## 简要流程
 ```bash
@@ -11,6 +12,7 @@ hexo clean
 hexo g
 hexo d
 ```
+<!-- more --> 
 
 ## 1.开启本地服务
 ```bash
