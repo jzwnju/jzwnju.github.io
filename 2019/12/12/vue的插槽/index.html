@@ -7,21 +7,22 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>Hello World - 蒋志伟的个人网站</title>
+<title>vue的插槽 - 蒋志伟的个人网站</title>
 
 
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+    <meta name="description" content="1. v-slotvue插槽有两种：具名插槽和作用域插槽，2.6.0以后，使用新语法v-slot指令（缩写为#）将两种语法统一起来。 老旧的语法，这里不再赘述，参见vue官网。下面讲讲新语法的用法。 12345678910&amp;lt;!-- 后备内容显示用户的名，以取代正常情况下用户的姓 --&amp;gt;&amp;lt;!-- 父组件  --&amp;gt;&amp;lt;!-- 要用template包裹，slot名称为slot">
+<meta name="keywords" content="前端 vue 知识点">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2019/09/28/hello-world/index.html">
+<meta property="og:title" content="vue的插槽">
+<meta property="og:url" content="http://yoursite.com/2019/12/12/vue的插槽/index.html">
 <meta property="og:site_name" content="蒋志伟的个人网站">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="1. v-slotvue插槽有两种：具名插槽和作用域插槽，2.6.0以后，使用新语法v-slot指令（缩写为#）将两种语法统一起来。 老旧的语法，这里不再赘述，参见vue官网。下面讲讲新语法的用法。 12345678910&amp;lt;!-- 后备内容显示用户的名，以取代正常情况下用户的姓 --&amp;gt;&amp;lt;!-- 父组件  --&amp;gt;&amp;lt;!-- 要用template包裹，slot名称为slot">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/images/og_image.png">
-<meta property="og:updated_time" content="2019-09-28T08:59:45.016Z">
+<meta property="og:updated_time" content="2019-12-12T02:21:38.806Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="vue的插槽">
+<meta name="twitter:description" content="1. v-slotvue插槽有两种：具名插槽和作用域插槽，2.6.0以后，使用新语法v-slot指令（缩写为#）将两种语法统一起来。 老旧的语法，这里不再赘述，参见vue官网。下面讲讲新语法的用法。 12345678910&amp;lt;!-- 后备内容显示用户的名，以取代正常情况下用户的姓 --&amp;gt;&amp;lt;!-- 父组件  --&amp;gt;&amp;lt;!-- 要用template包裹，slot名称为slot">
 <meta name="twitter:image" content="http://yoursite.com/images/og_image.png">
 
 
@@ -80,7 +81,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/myAvatar.jpg" alt="Hello World" height="28">
+                <img src="/images/myAvatar.jpg" alt="vue的插槽" height="28">
             
             </a>
         </div>
@@ -128,13 +129,13 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-09-28T08:59:45.016Z">2019-09-28</time>
+                <time class="level-item has-text-grey" datetime="2019-12-12T13:36:24.000Z">2019-12-12</time>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    1 分钟 读完 (大约 121 个字)
+                    3 分钟 读完 (大约 377 个字)
                 </span>
                 
                 
@@ -143,24 +144,39 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                Hello World
+                vue的插槽
             
         </h1>
         <div class="content">
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="hljs-string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+            <h2 id="1-v-slot"><a href="#1-v-slot" class="headerlink" title="1. v-slot"></a>1. v-slot</h2><p>vue插槽有两种：具名插槽和作用域插槽，2.6.0以后，使用新语法v-slot指令（缩写为#）将两种语法统一起来。</p>
+<p>老旧的语法，这里不再赘述，参见vue官网。下面讲讲新语法的用法。</p>
+<figure class="highlight html hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">&lt;!-- 后备内容显示用户的名，以取代正常情况下用户的姓 --&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">&lt;!-- 父组件  --&gt;</span></span><br><span class="line"><span class="hljs-comment">&lt;!-- 要用template包裹，slot名称为slotName（具名插槽），放入对应名称的插槽位置(子组件未给name属性，父组件写default）； --&gt;</span></span><br><span class="line">  <span class="hljs-comment">&lt;!-- 接收子组件传入的属性传入属性，并命名为slotProps（作用域插槽），父级作用域中就可以使用子组件中传入的属性。（这里父级接收时可以使用解构语法） --&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">current-user</span>&gt;</span></span><br><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">template</span> <span class="hljs-attr">v-slot:slotName</span>=<span class="hljs-string">"slotProps"</span>&gt;</span></span><br><span class="line">    &#123;&#123; slotProps.user.firstName &#125;&#125;</span><br><span class="line">  <span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">current-user</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<figure class="highlight html hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">&lt;!-- 子组件current-user中 --&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span></span><br><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">slot</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"slotName"</span> <span class="hljs-attr">v-bind:user</span>=<span class="hljs-string">"user"</span>&gt;</span></span><br><span class="line">    <span class="hljs-comment">&lt;!-- 父组件未传入插槽内容时，使用这里的默认内容 --&gt;</span></span><br><span class="line">    &#123;&#123; user.lastName &#125;&#125;</span><br><span class="line">  <span class="hljs-tag">&lt;/<span class="hljs-name">slot</span>&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="2-v-slot缩写"><a href="#2-v-slot缩写" class="headerlink" title="2. v-slot缩写"></a>2. v-slot缩写</h2><ol>
+<li>跟 v-on 和 v-bind 一样，v-slot 也有缩写，即把参数之前的所有内容 (v-slot:) 替换为字符 #。例如 v-slot:header 可以被重写为 #header</li>
+<li>你希望使用缩写的话，你必须始终以明确插槽名取而代之。即使子组件未给slot明确的name属性。<figure class="highlight html hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">current-user</span> #<span class="hljs-attr">default</span>=<span class="hljs-string">"&#123; user &#125;"</span>&gt;</span></span><br><span class="line">  &#123;&#123; user.firstName &#125;&#125;</span><br><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">current-user</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<figure class="highlight html hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span></span><br><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">slot</span> <span class="hljs-attr">v-bind:user</span>=<span class="hljs-string">"user"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">slot</span>&gt;</span></span><br><span class="line">    &#123;&#123; user.lastName &#125;&#125;</span><br><span class="line">  <span class="hljs-tag">&lt;/<span class="hljs-name">slot</span>&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<hr>
+<h2 id="3-动态插槽名"><a href="#3-动态插槽名" class="headerlink" title="3. 动态插槽名"></a>3. 动态插槽名</h2><p>动态指令参数也可以用在 v-slot 上，来定义动态的插槽名：</p>
+<figure class="highlight html hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">base-layout</span>&gt;</span></span><br><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">template</span> <span class="hljs-attr">v-slot:</span>[<span class="hljs-attr">dynamicSlotName</span>]&gt;</span></span><br><span class="line">    ...</span><br><span class="line">  <span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">base-layout</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
+
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/tags/前端-vue-知识点/">前端 vue 知识点</a>
+                </div>
+            </div>
         </div>
         
         
@@ -204,13 +220,13 @@
 <div class="card card-transparent">
     <div class="level post-navigation is-flex-wrap is-mobile">
         
-        <div class="level-start">
-            <a class="level level-item has-link-grey  article-nav-prev" href="/2019/10/13/hexo使用说明/">
-                <i class="level-item fas fa-chevron-left"></i>
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/2019/10/13/hexo使用说明/">
                 <span class="level-item">hexo使用说明</span>
+                <i class="level-item fas fa-chevron-right"></i>
             </a>
         </div>
-        
         
     </div>
 </div>
@@ -280,7 +296,7 @@
                         标签
                     </p>
                     <p class="title has-text-weight-normal">
-                        0
+                        1
                     </p>
                 </div>
             </div>
@@ -371,7 +387,7 @@
         <h3 class="menu-label">
             标签云
         </h3>
-        
+        <a href="/tags/前端-vue-知识点/" style="font-size: 10px;">前端 vue 知识点</a>
     </div>
 </div>
     
@@ -383,6 +399,25 @@
         <h3 class="menu-label">
             最新文章
         </h3>
+        
+        <article class="media">
+            
+            <a href="/2019/12/12/vue的插槽/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="vue的插槽">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-12T13:36:24.000Z">2019-12-12</time></div>
+                    <a href="/2019/12/12/vue的插槽/" class="title has-link-black-ter is-size-6 has-text-weight-normal">vue的插槽</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
         
         <article class="media">
             
@@ -403,25 +438,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/2019/09/28/hello-world/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Hello World">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-09-28T08:59:45.016Z">2019-09-28</time></div>
-                    <a href="/2019/09/28/hello-world/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Hello World</a>
-                    <p class="is-size-7 is-uppercase">
-                        
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
         
@@ -434,9 +450,9 @@
         <ul class="menu-list">
         
         <li>
-            <a class="level is-marginless" href="/archives/2019/10/">
+            <a class="level is-marginless" href="/archives/2019/12/">
                 <span class="level-start">
-                    <span class="level-item">十月 2019</span>
+                    <span class="level-item">十二月 2019</span>
                 </span>
                 <span class="level-end">
                     <span class="level-item tag">1</span>
@@ -445,9 +461,9 @@
         </li>
         
         <li>
-            <a class="level is-marginless" href="/archives/2019/09/">
+            <a class="level is-marginless" href="/archives/2019/10/">
                 <span class="level-start">
-                    <span class="level-item">九月 2019</span>
+                    <span class="level-item">十月 2019</span>
                 </span>
                 <span class="level-end">
                     <span class="level-item tag">1</span>
@@ -467,6 +483,13 @@
                 标签
             </h3>
             <div class="field is-grouped is-grouped-multiline">
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/前端-vue-知识点/">
+                        <span class="tag">前端 vue 知识点</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
                 
             </div>
         </div>
@@ -492,6 +515,25 @@
         
         <article class="media">
             
+            <a href="/2019/12/12/vue的插槽/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="vue的插槽">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-12T13:36:24.000Z">2019-12-12</time></div>
+                    <a href="/2019/12/12/vue的插槽/" class="title has-link-black-ter is-size-6 has-text-weight-normal">vue的插槽</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
             <a href="/2019/10/13/hexo使用说明/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/images/thumbnail.svg" alt="hexo使用说明">
@@ -502,25 +544,6 @@
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-13T06:42:05.000Z">2019-10-13</time></div>
                     <a href="/2019/10/13/hexo使用说明/" class="title has-link-black-ter is-size-6 has-text-weight-normal">hexo使用说明</a>
-                    <p class="is-size-7 is-uppercase">
-                        
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2019/09/28/hello-world/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Hello World">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-09-28T08:59:45.016Z">2019-09-28</time></div>
-                    <a href="/2019/09/28/hello-world/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Hello World</a>
                     <p class="is-size-7 is-uppercase">
                         
                     </p>
@@ -540,9 +563,9 @@
         <ul class="menu-list">
         
         <li>
-            <a class="level is-marginless" href="/archives/2019/10/">
+            <a class="level is-marginless" href="/archives/2019/12/">
                 <span class="level-start">
-                    <span class="level-item">十月 2019</span>
+                    <span class="level-item">十二月 2019</span>
                 </span>
                 <span class="level-end">
                     <span class="level-item tag">1</span>
@@ -551,9 +574,9 @@
         </li>
         
         <li>
-            <a class="level is-marginless" href="/archives/2019/09/">
+            <a class="level is-marginless" href="/archives/2019/10/">
                 <span class="level-start">
-                    <span class="level-item">九月 2019</span>
+                    <span class="level-item">十月 2019</span>
                 </span>
                 <span class="level-end">
                     <span class="level-item tag">1</span>
@@ -574,6 +597,13 @@
             </h3>
             <div class="field is-grouped is-grouped-multiline">
                 
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/前端-vue-知识点/">
+                        <span class="tag">前端 vue 知识点</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
             </div>
         </div>
     </div>
@@ -591,7 +621,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/myAvatar.jpg" alt="Hello World" height="28">
+                    <img src="/images/myAvatar.jpg" alt="vue的插槽" height="28">
                 
                 </a>
                 <p class="is-size-7">
