@@ -10,20 +10,20 @@
 <title>vue的插槽 - 蒋志伟的个人网站</title>
 
 
-    <meta name="description" content="1. v-slotvue插槽有两种：具名插槽和作用域插槽，2.6.0以后，使用新语法v-slot指令（缩写为#）将两种语法统一起来。 老旧的语法，这里不再赘述，参见vue官网。下面讲讲新语法的用法。 12345678910&amp;lt;!-- 后备内容显示用户的名，以取代正常情况下用户的姓 --&amp;gt;&amp;lt;!-- 父组件  --&amp;gt;&amp;lt;!-- 要用template包裹，slot名称为slot">
+    <meta name="description" content="1. v-slotvue插槽有两种：具名插槽和作用域插槽，2.6.0以后，使用新语法v-slot指令（缩写为#）将两种语法统一起来。 老旧的语法，这里不再赘述，参见vue官网。下面讲讲新语法的用法。">
 <meta name="keywords" content="前端 vue 知识点">
 <meta property="og:type" content="article">
 <meta property="og:title" content="vue的插槽">
 <meta property="og:url" content="http://yoursite.com/2019/12/12/vue的插槽/index.html">
 <meta property="og:site_name" content="蒋志伟的个人网站">
-<meta property="og:description" content="1. v-slotvue插槽有两种：具名插槽和作用域插槽，2.6.0以后，使用新语法v-slot指令（缩写为#）将两种语法统一起来。 老旧的语法，这里不再赘述，参见vue官网。下面讲讲新语法的用法。 12345678910&amp;lt;!-- 后备内容显示用户的名，以取代正常情况下用户的姓 --&amp;gt;&amp;lt;!-- 父组件  --&amp;gt;&amp;lt;!-- 要用template包裹，slot名称为slot">
+<meta property="og:description" content="1. v-slotvue插槽有两种：具名插槽和作用域插槽，2.6.0以后，使用新语法v-slot指令（缩写为#）将两种语法统一起来。 老旧的语法，这里不再赘述，参见vue官网。下面讲讲新语法的用法。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://yoursite.com/images/og_image.png">
-<meta property="og:updated_time" content="2019-12-12T02:21:38.806Z">
+<meta property="og:image" content="http://yoursite.com/assets/images/front/thumbnails/2.jpg">
+<meta property="og:updated_time" content="2019-12-12T07:36:49.478Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="vue的插槽">
-<meta name="twitter:description" content="1. v-slotvue插槽有两种：具名插槽和作用域插槽，2.6.0以后，使用新语法v-slot指令（缩写为#）将两种语法统一起来。 老旧的语法，这里不再赘述，参见vue官网。下面讲讲新语法的用法。 12345678910&amp;lt;!-- 后备内容显示用户的名，以取代正常情况下用户的姓 --&amp;gt;&amp;lt;!-- 父组件  --&amp;gt;&amp;lt;!-- 要用template包裹，slot名称为slot">
-<meta name="twitter:image" content="http://yoursite.com/images/og_image.png">
+<meta name="twitter:description" content="1. v-slotvue插槽有两种：具名插槽和作用域插槽，2.6.0以后，使用新语法v-slot指令（缩写为#）将两种语法统一起来。 老旧的语法，这里不再赘述，参见vue官网。下面讲讲新语法的用法。">
+<meta name="twitter:image" content="http://yoursite.com/assets/images/front/thumbnails/2.jpg">
 
 
 
@@ -125,17 +125,27 @@
                 <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
 <div class="card">
     
+    <div class="card-image">
+        <span  class="image is-7by1">
+            <img class="thumbnail" src="/assets/images/front/thumbnails/2.jpg" alt="vue的插槽">
+        </span>
+    </div>
+    
     <div class="card-content article ">
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
                 <time class="level-item has-text-grey" datetime="2019-12-12T13:36:24.000Z">2019-12-12</time>
                 
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/前端/">前端</a>
+                </div>
+                
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    3 分钟 读完 (大约 377 个字)
+                    3 分钟 读完 (大约 378 个字)
                 </span>
                 
                 
@@ -150,6 +160,8 @@
         <div class="content">
             <h2 id="1-v-slot"><a href="#1-v-slot" class="headerlink" title="1. v-slot"></a>1. v-slot</h2><p>vue插槽有两种：具名插槽和作用域插槽，2.6.0以后，使用新语法v-slot指令（缩写为#）将两种语法统一起来。</p>
 <p>老旧的语法，这里不再赘述，参见vue官网。下面讲讲新语法的用法。</p>
+<a id="more"></a> 
+
 <figure class="highlight html hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">&lt;!-- 后备内容显示用户的名，以取代正常情况下用户的姓 --&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">&lt;!-- 父组件  --&gt;</span></span><br><span class="line"><span class="hljs-comment">&lt;!-- 要用template包裹，slot名称为slotName（具名插槽），放入对应名称的插槽位置(子组件未给name属性，父组件写default）； --&gt;</span></span><br><span class="line">  <span class="hljs-comment">&lt;!-- 接收子组件传入的属性传入属性，并命名为slotProps（作用域插槽），父级作用域中就可以使用子组件中传入的属性。（这里父级接收时可以使用解构语法） --&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">current-user</span>&gt;</span></span><br><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">template</span> <span class="hljs-attr">v-slot:slotName</span>=<span class="hljs-string">"slotProps"</span>&gt;</span></span><br><span class="line">    &#123;&#123; slotProps.user.firstName &#125;&#125;</span><br><span class="line">  <span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">current-user</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <figure class="highlight html hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">&lt;!-- 子组件current-user中 --&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span></span><br><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">slot</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"slotName"</span> <span class="hljs-attr">v-bind:user</span>=<span class="hljs-string">"user"</span>&gt;</span></span><br><span class="line">    <span class="hljs-comment">&lt;!-- 父组件未传入插槽内容时，使用这里的默认内容 --&gt;</span></span><br><span class="line">    &#123;&#123; user.lastName &#125;&#125;</span><br><span class="line">  <span class="hljs-tag">&lt;/<span class="hljs-name">slot</span>&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></span><br></pre></td></tr></table></figure>
@@ -180,6 +192,10 @@
         </div>
         
         
+        
+        <div class="social-share"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/css/share.min.css">
+<script src="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/js/social-share.min.js"></script>
         
     </div>
 </div>
@@ -286,7 +302,7 @@
                         分类
                     </p>
                     <p class="title has-text-weight-normal">
-                        0
+                        1
                     </p>
                 </div>
             </div>
@@ -296,7 +312,7 @@
                         标签
                     </p>
                     <p class="title has-text-weight-normal">
-                        1
+                        2
                     </p>
                 </div>
             </div>
@@ -315,6 +331,13 @@
                 title="Github" href="https://github.com/jzwnju">
                 
                 <i class="fab fa-github"></i>
+                
+            </a>
+            
+            <a class="level-item button is-white is-marginless" target="_blank"
+                title="Weibo" href="https://weibo.com/u/3757446997">
+                
+                <i class="fab fa-weibo"></i>
                 
             </a>
             
@@ -341,23 +364,12 @@
         <ul class="menu-list">
         
             <li>
-                <a class="level is-mobile" href="https://hexo.io" target="_blank">
+                <a class="level is-mobile" href="https://me.csdn.net/qq_39852145" target="_blank">
                     <span class="level-left">
-                        <span class="level-item">Hexo</span>
+                        <span class="level-item">csdn</span>
                     </span>
                     <span class="level-right">
-                        <span class="level-item tag">hexo.io</span>
-                    </span>
-                </a>
-            </li>
-        
-            <li>
-                <a class="level is-mobile" href="https://github.com/ppoffice" target="_blank">
-                    <span class="level-left">
-                        <span class="level-item">PPOffice</span>
-                    </span>
-                    <span class="level-right">
-                        <span class="level-item tag">github.com</span>
+                        <span class="level-item tag">me.csdn.net</span>
                     </span>
                 </a>
             </li>
@@ -376,7 +388,15 @@
                 分类
             </h3>
             <ul class="menu-list">
-            
+            <li>
+        <a class="level is-marginless" href="/categories/前端/">
+            <span class="level-start">
+                <span class="level-item">前端</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">1</span>
+            </span>
+        </a></li>
             </ul>
         </div>
     </div>
@@ -387,12 +407,12 @@
         <h3 class="menu-label">
             标签云
         </h3>
-        <a href="/tags/前端-vue-知识点/" style="font-size: 10px;">前端 vue 知识点</a>
+        <a href="/tags/其它/" style="font-size: 10px;">其它</a> <a href="/tags/前端-vue-知识点/" style="font-size: 10px;">前端 vue 知识点</a>
     </div>
 </div>
     
     
-        <div class="column-right-shadow is-hidden-widescreen ">
+        <div class="column-right-shadow is-hidden-widescreen is-sticky">
         
             <div class="card widget">
     <div class="card-content">
@@ -404,7 +424,7 @@
             
             <a href="/2019/12/12/vue的插槽/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="vue的插槽">
+                    <img class="thumbnail" src="/assets/images/front/thumbnails/2.jpg" alt="vue的插槽">
                 </p>
             </a>
             
@@ -413,7 +433,7 @@
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-12T13:36:24.000Z">2019-12-12</time></div>
                     <a href="/2019/12/12/vue的插槽/" class="title has-link-black-ter is-size-6 has-text-weight-normal">vue的插槽</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/前端/">前端</a>
                     </p>
                 </div>
             </div>
@@ -423,7 +443,7 @@
             
             <a href="/2019/10/13/hexo使用说明/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="hexo使用说明">
+                    <img class="thumbnail" src="/assets/images/front/thumbnails/1.jpg" alt="hexo使用说明">
                 </p>
             </a>
             
@@ -485,6 +505,13 @@
             <div class="field is-grouped is-grouped-multiline">
                 
                 <div class="control">
+                    <a class="tags has-addons" href="/tags/其它/">
+                        <span class="tag">其它</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
                     <a class="tags has-addons" href="/tags/前端-vue-知识点/">
                         <span class="tag">前端 vue 知识点</span>
                         <span class="tag is-grey">1</span>
@@ -505,7 +532,7 @@
 
 
 
-<div class="column is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only has-order-3 column-right ">
+<div class="column is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only has-order-3 column-right is-sticky">
     
         <div class="card widget">
     <div class="card-content">
@@ -517,7 +544,7 @@
             
             <a href="/2019/12/12/vue的插槽/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="vue的插槽">
+                    <img class="thumbnail" src="/assets/images/front/thumbnails/2.jpg" alt="vue的插槽">
                 </p>
             </a>
             
@@ -526,7 +553,7 @@
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-12T13:36:24.000Z">2019-12-12</time></div>
                     <a href="/2019/12/12/vue的插槽/" class="title has-link-black-ter is-size-6 has-text-weight-normal">vue的插槽</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/前端/">前端</a>
                     </p>
                 </div>
             </div>
@@ -536,7 +563,7 @@
             
             <a href="/2019/10/13/hexo使用说明/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="hexo使用说明">
+                    <img class="thumbnail" src="/assets/images/front/thumbnails/1.jpg" alt="hexo使用说明">
                 </p>
             </a>
             
@@ -596,6 +623,13 @@
                 标签
             </h3>
             <div class="field is-grouped is-grouped-multiline">
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/其它/">
+                        <span class="tag">其它</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
                 
                 <div class="control">
                     <a class="tags has-addons" href="/tags/前端-vue-知识点/">
