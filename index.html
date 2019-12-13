@@ -26,7 +26,7 @@
 
 
 
-<link rel="icon" href="/images/favicon.svg">
+<link rel="icon" href="/images/myAvatar.jpg">
 
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
@@ -57,7 +57,15 @@
     
     
     
-    
+    <script>
+var _hmt = _hmt || [];
+(function() {
+    var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?31552f1ad96cfce8fc7598674de198b0";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+})();
+</script>
     
     
     
@@ -121,17 +129,27 @@
     
 <div class="card">
     
+    <div class="card-image">
+        <a href="/2019/12/12/vue的插槽/" class="image is-7by1">
+            <img class="thumbnail" src="/assets/images/front/thumbnails/2.jpg" alt="vue的插槽">
+        </a>
+    </div>
+    
     <div class="card-content article ">
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-10-13T06:42:05.000Z">2019-10-13</time>
+                <time class="level-item has-text-grey" datetime="2019-12-12T13:36:24.000Z">2019-12-12</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/前端/">前端</a>
+                </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    5 分钟 读完 (大约 683 个字)
+                    3 分钟 读完 (大约 378 个字)
                 </span>
                 
                 
@@ -140,62 +158,22 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                <a class="has-link-black-ter" href="/2019/10/13/hexo使用说明/">hexo使用说明</a>
+                <a class="has-link-black-ter" href="/2019/12/12/vue的插槽/">vue的插槽</a>
             
         </h1>
         <div class="content">
-            <h2 id="简要流程"><a href="#简要流程" class="headerlink" title="简要流程"></a>简要流程</h2><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br><span class="line">hexo new &lt;title&gt;</span><br><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-
-<h2 id="1-开启本地服务"><a href="#1-开启本地服务" class="headerlink" title="1.开启本地服务"></a>1.开启本地服务</h2><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure>
-
-<h2 id="2-文章post"><a href="#2-文章post" class="headerlink" title="2.文章post"></a>2.文章post</h2><h3 id="layout种类和创建文章"><a href="#layout种类和创建文章" class="headerlink" title="layout种类和创建文章"></a>layout种类和创建文章</h3><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure>
-
-<p>layout可选，有3种， 默认为post，还可为page和draft。</p>
-<h2 id="3-草稿draft"><a href="#3-草稿draft" class="headerlink" title="3.草稿draft"></a>3.草稿draft</h2><h3 id="1）创建草稿"><a href="#1）创建草稿" class="headerlink" title="1）创建草稿"></a>1）创建草稿</h3><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new draft &lt;title&gt;</span><br></pre></td></tr></table></figure>
-
-<h3 id="2）发布草稿"><a href="#2）发布草稿" class="headerlink" title="2）发布草稿"></a>2）发布草稿</h3><p>_draft文件夹里是草稿文件，可以使用如下命令将draft转为post：</p>
-<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo publish &lt;draftTitle&gt;</span><br></pre></td></tr></table></figure>
-
-<h2 id="4-模版Scaffold"><a href="#4-模版Scaffold" class="headerlink" title="4.模版Scaffold"></a>4.模版Scaffold</h2><p>Hexo 会根据 scaffolds 文件夹内相对应的文件来建立文件，例如：</p>
-<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new photo <span class="hljs-string">"My Gallery"</span></span><br></pre></td></tr></table></figure>
-
-<p>即：Hexo 会尝试在 scaffolds 文件夹中寻找 photo.md，并根据其内容建立文章。</p>
-<h2 id="5-页面page"><a href="#5-页面page" class="headerlink" title="5.页面page"></a>5.页面page</h2><p>我目前还不知道该如何用中文称呼这类页面。我们可以把post和draft统称为blog pages，在这之外的一种就是normal pages， 类似一个网站上的“关于”，“了解我们”之类的页面。</p>
-<h3 id="创建page-s"><a href="#创建page-s" class="headerlink" title="创建page s"></a>创建page s</h3><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page c</span><br></pre></td></tr></table></figure>
-
-<p>和前两种不同，这个命令会在source文件夹内创建出c文件夹，与_posts，_drafts并列。文件夹里面有一个index.md文件。</p>
-<p>刷新页面，你会发现c并没有出现在页面内，那它在哪儿呢？</p>
-<p>在网址后面加上c/， 即<a href="http://localhost:4000/c/，就可以看到了。" target="_blank" rel="noopener">http://localhost:4000/c/，就可以看到了。</a></p>
-<p>正因为c不是一个blog page，所以它也不会出现在blog列表中，而是要通过URL去access。</p>
-<h2 id="6-修改默认设置"><a href="#6-修改默认设置" class="headerlink" title="6.修改默认设置"></a>6.修改默认设置</h2><p>为什么一开始的时候我们用</p>
-<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new &lt;title&gt;</span><br></pre></td></tr></table></figure>
-
-<p>就直接生成了post page呢？<br>因为默认的设置。</p>
-<p>打开熟悉的_config.yml文件，找到</p>
-<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">default_layout: post</span><br></pre></td></tr></table></figure>
-
-<p>这句表示默认的页面会新建成post格式的。</p>
-<p>所以，如果你习惯先把文章写成草稿，那就把它改成draft就好。</p>
-<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">default_layout: draft</span><br></pre></td></tr></table></figure>
-
-<h2 id="7-部署到github"><a href="#7-部署到github" class="headerlink" title="7.部署到github"></a>7.部署到github</h2><p>打开站点配置文件 _config.yml，翻到最后，修改为<br>YourgithubName就是你的GitHub账户</p>
-<pre><code>deploy:
-  type: git
-  repo: https://github.com/YourgithubName/YourgithubName.github.io.git
-  branch: master
-  ``` s
-这个时候需要先安装deploy-git ，也就是部署的命令,这样你才能用命令部署到GitHub。
-```bash
-npm install hexo-deployer-git --save</code></pre><p>然后</p>
-<pre><code class="bash">hexo clean
-hexo generate
-hexo deploy</code></pre>
-<p>其中 hexo clean清除了你之前生成的东西，也可以不加。<br>hexo generate 顾名思义，生成静态文章，可以用 hexo g缩写<br>hexo deploy 部署文章，可以用hexo d缩写</p>
-<p>注意deploy时可能要你输入username和password。</p>
-<p>得到下图就说明部署成功了，过一会儿就可以在<a href="http://yourname.github.io" target="_blank" rel="noopener">http://yourname.github.io</a> 这个网站看到你的博客了！！</p>
-
+            <h2 id="1-v-slot"><a href="#1-v-slot" class="headerlink" title="1. v-slot"></a>1. v-slot</h2><p>vue插槽有两种：具名插槽和作用域插槽，2.6.0以后，使用新语法v-slot指令（缩写为#）将两种语法统一起来。</p>
+<p>老旧的语法，这里不再赘述，参见vue官网。下面讲讲新语法的用法。</p>
         </div>
         
+        
+        <div class="level is-mobile">
+            <div class="level-start">
+                <div class="level-item">
+                <a class="button is-size-7 is-light" href="/2019/12/12/vue的插槽/#more">阅读更多</a>
+                </div>
+            </div>
+        </div>
         
         
     </div>
@@ -211,17 +189,23 @@ hexo deploy</code></pre>
     
 <div class="card">
     
+    <div class="card-image">
+        <a href="/2019/10/13/hexo使用说明/" class="image is-7by1">
+            <img class="thumbnail" src="/assets/images/front/thumbnails/1.jpg" alt="hexo使用说明">
+        </a>
+    </div>
+    
     <div class="card-content article ">
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-09-28T08:59:45.016Z">2019-09-28</time>
+                <time class="level-item has-text-grey" datetime="2019-10-13T06:42:05.000Z">2019-10-13</time>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    1 分钟 读完 (大约 121 个字)
+                    5 分钟 读完 (大约 684 个字)
                 </span>
                 
                 
@@ -230,26 +214,21 @@ hexo deploy</code></pre>
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                <a class="has-link-black-ter" href="/2019/09/28/hello-world/">Hello World</a>
+                <a class="has-link-black-ter" href="/2019/10/13/hexo使用说明/">hexo使用说明</a>
             
         </h1>
         <div class="content">
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="hljs-string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
+            <h2 id="简要流程"><a href="#简要流程" class="headerlink" title="简要流程"></a>简要流程</h2><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br><span class="line">hexo new &lt;title&gt;</span><br><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
         </div>
         
+        
+        <div class="level is-mobile">
+            <div class="level-start">
+                <div class="level-item">
+                <a class="button is-size-7 is-light" href="/2019/10/13/hexo使用说明/#more">阅读更多</a>
+                </div>
+            </div>
+        </div>
         
         
     </div>
@@ -316,7 +295,7 @@ hexo deploy</code></pre>
                         分类
                     </p>
                     <p class="title has-text-weight-normal">
-                        0
+                        1
                     </p>
                 </div>
             </div>
@@ -326,7 +305,7 @@ hexo deploy</code></pre>
                         标签
                     </p>
                     <p class="title has-text-weight-normal">
-                        0
+                        2
                     </p>
                 </div>
             </div>
@@ -345,6 +324,13 @@ hexo deploy</code></pre>
                 title="Github" href="https://github.com/jzwnju">
                 
                 <i class="fab fa-github"></i>
+                
+            </a>
+            
+            <a class="level-item button is-white is-marginless" target="_blank"
+                title="Weibo" href="https://weibo.com/u/3757446997">
+                
+                <i class="fab fa-weibo"></i>
                 
             </a>
             
@@ -371,23 +357,12 @@ hexo deploy</code></pre>
         <ul class="menu-list">
         
             <li>
-                <a class="level is-mobile" href="https://hexo.io" target="_blank">
+                <a class="level is-mobile" href="https://me.csdn.net/qq_39852145" target="_blank">
                     <span class="level-left">
-                        <span class="level-item">Hexo</span>
+                        <span class="level-item">csdn</span>
                     </span>
                     <span class="level-right">
-                        <span class="level-item tag">hexo.io</span>
-                    </span>
-                </a>
-            </li>
-        
-            <li>
-                <a class="level is-mobile" href="https://github.com/ppoffice" target="_blank">
-                    <span class="level-left">
-                        <span class="level-item">PPOffice</span>
-                    </span>
-                    <span class="level-right">
-                        <span class="level-item tag">github.com</span>
+                        <span class="level-item tag">me.csdn.net</span>
                     </span>
                 </a>
             </li>
@@ -406,16 +381,31 @@ hexo deploy</code></pre>
                 分类
             </h3>
             <ul class="menu-list">
-            
+            <li>
+        <a class="level is-marginless" href="/categories/前端/">
+            <span class="level-start">
+                <span class="level-item">前端</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">1</span>
+            </span>
+        </a></li>
             </ul>
         </div>
     </div>
 </div>
     
-        
+        <div class="card widget">
+    <div class="card-content">
+        <h3 class="menu-label">
+            标签云
+        </h3>
+        <a href="/tags/其它/" style="font-size: 10px;">其它</a> <a href="/tags/前端-vue-知识点/" style="font-size: 10px;">前端 vue 知识点</a>
+    </div>
+</div>
     
     
-        <div class="column-right-shadow is-hidden-widescreen ">
+        <div class="column-right-shadow is-hidden-widescreen is-sticky">
         
             <div class="card widget">
     <div class="card-content">
@@ -425,18 +415,18 @@ hexo deploy</code></pre>
         
         <article class="media">
             
-            <a href="/2019/10/13/hexo使用说明/" class="media-left">
+            <a href="/2019/12/12/vue的插槽/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="hexo使用说明">
+                    <img class="thumbnail" src="/assets/images/front/thumbnails/2.jpg" alt="vue的插槽">
                 </p>
             </a>
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-13T06:42:05.000Z">2019-10-13</time></div>
-                    <a href="/2019/10/13/hexo使用说明/" class="title has-link-black-ter is-size-6 has-text-weight-normal">hexo使用说明</a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-12T13:36:24.000Z">2019-12-12</time></div>
+                    <a href="/2019/12/12/vue的插槽/" class="title has-link-black-ter is-size-6 has-text-weight-normal">vue的插槽</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/前端/">前端</a>
                     </p>
                 </div>
             </div>
@@ -444,16 +434,16 @@ hexo deploy</code></pre>
         
         <article class="media">
             
-            <a href="/2019/09/28/hello-world/" class="media-left">
+            <a href="/2019/10/13/hexo使用说明/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Hello World">
+                    <img class="thumbnail" src="/assets/images/front/thumbnails/1.jpg" alt="hexo使用说明">
                 </p>
             </a>
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-09-28T08:59:45.016Z">2019-09-28</time></div>
-                    <a href="/2019/09/28/hello-world/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Hello World</a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-13T06:42:05.000Z">2019-10-13</time></div>
+                    <a href="/2019/10/13/hexo使用说明/" class="title has-link-black-ter is-size-6 has-text-weight-normal">hexo使用说明</a>
                     <p class="is-size-7 is-uppercase">
                         
                     </p>
@@ -473,9 +463,9 @@ hexo deploy</code></pre>
         <ul class="menu-list">
         
         <li>
-            <a class="level is-marginless" href="/archives/2019/10/">
+            <a class="level is-marginless" href="/archives/2019/12/">
                 <span class="level-start">
-                    <span class="level-item">十月 2019</span>
+                    <span class="level-item">十二月 2019</span>
                 </span>
                 <span class="level-end">
                     <span class="level-item tag">1</span>
@@ -484,9 +474,9 @@ hexo deploy</code></pre>
         </li>
         
         <li>
-            <a class="level is-marginless" href="/archives/2019/09/">
+            <a class="level is-marginless" href="/archives/2019/10/">
                 <span class="level-start">
-                    <span class="level-item">九月 2019</span>
+                    <span class="level-item">十月 2019</span>
                 </span>
                 <span class="level-end">
                     <span class="level-item tag">1</span>
@@ -507,6 +497,20 @@ hexo deploy</code></pre>
             </h3>
             <div class="field is-grouped is-grouped-multiline">
                 
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/其它/">
+                        <span class="tag">其它</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/前端-vue-知识点/">
+                        <span class="tag">前端 vue 知识点</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
             </div>
         </div>
     </div>
@@ -521,7 +525,7 @@ hexo deploy</code></pre>
 
 
 
-<div class="column is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only has-order-3 column-right ">
+<div class="column is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only has-order-3 column-right is-sticky">
     
         <div class="card widget">
     <div class="card-content">
@@ -531,18 +535,18 @@ hexo deploy</code></pre>
         
         <article class="media">
             
-            <a href="/2019/10/13/hexo使用说明/" class="media-left">
+            <a href="/2019/12/12/vue的插槽/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="hexo使用说明">
+                    <img class="thumbnail" src="/assets/images/front/thumbnails/2.jpg" alt="vue的插槽">
                 </p>
             </a>
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-13T06:42:05.000Z">2019-10-13</time></div>
-                    <a href="/2019/10/13/hexo使用说明/" class="title has-link-black-ter is-size-6 has-text-weight-normal">hexo使用说明</a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-12T13:36:24.000Z">2019-12-12</time></div>
+                    <a href="/2019/12/12/vue的插槽/" class="title has-link-black-ter is-size-6 has-text-weight-normal">vue的插槽</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/前端/">前端</a>
                     </p>
                 </div>
             </div>
@@ -550,16 +554,16 @@ hexo deploy</code></pre>
         
         <article class="media">
             
-            <a href="/2019/09/28/hello-world/" class="media-left">
+            <a href="/2019/10/13/hexo使用说明/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Hello World">
+                    <img class="thumbnail" src="/assets/images/front/thumbnails/1.jpg" alt="hexo使用说明">
                 </p>
             </a>
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-09-28T08:59:45.016Z">2019-09-28</time></div>
-                    <a href="/2019/09/28/hello-world/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Hello World</a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-13T06:42:05.000Z">2019-10-13</time></div>
+                    <a href="/2019/10/13/hexo使用说明/" class="title has-link-black-ter is-size-6 has-text-weight-normal">hexo使用说明</a>
                     <p class="is-size-7 is-uppercase">
                         
                     </p>
@@ -579,9 +583,9 @@ hexo deploy</code></pre>
         <ul class="menu-list">
         
         <li>
-            <a class="level is-marginless" href="/archives/2019/10/">
+            <a class="level is-marginless" href="/archives/2019/12/">
                 <span class="level-start">
-                    <span class="level-item">十月 2019</span>
+                    <span class="level-item">十二月 2019</span>
                 </span>
                 <span class="level-end">
                     <span class="level-item tag">1</span>
@@ -590,9 +594,9 @@ hexo deploy</code></pre>
         </li>
         
         <li>
-            <a class="level is-marginless" href="/archives/2019/09/">
+            <a class="level is-marginless" href="/archives/2019/10/">
                 <span class="level-start">
-                    <span class="level-item">九月 2019</span>
+                    <span class="level-item">十月 2019</span>
                 </span>
                 <span class="level-end">
                     <span class="level-item tag">1</span>
@@ -612,6 +616,20 @@ hexo deploy</code></pre>
                 标签
             </h3>
             <div class="field is-grouped is-grouped-multiline">
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/其它/">
+                        <span class="tag">其它</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/前端-vue-知识点/">
+                        <span class="tag">前端 vue 知识点</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
                 
             </div>
         </div>
@@ -645,23 +663,15 @@ hexo deploy</code></pre>
                 <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
                 
                 <p class="control">
-                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                    <a class="button is-white is-large" target="_blank" title="Weibo" href="https://weibo.com/u/3757446997">
                         
-                        <i class="fab fa-creative-commons"></i>
-                        
-                    </a>
-                </p>
-                
-                <p class="control">
-                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
-                        
-                        <i class="fab fa-creative-commons-by"></i>
+                        <i class="fab fa-weibo"></i>
                         
                     </a>
                 </p>
                 
                 <p class="control">
-                    <a class="button is-white is-large" target="_blank" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus">
+                    <a class="button is-white is-large" target="_blank" title="Download on GitHub" href="https://github.com/jzwnju">
                         
                         <i class="fab fa-github"></i>
                         
