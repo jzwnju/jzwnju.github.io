@@ -79,10 +79,14 @@ theme: icarus
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  # type: git
-  repo: https://github.com/jzwnju/jzwnju.github.io.git
-  branch: master
-  type: baidu_url_submitter ## 这是新加的
+  type: git
+  repo: 
+    github: https://github.com/jzwnju/jzwnju.github.io.git
+    coding: https://e.coding.net/jiangzhiwei/blog.git
+  # branch: master
+
+
+  # type: baidu_url_submitter ## 这是新加的
 
 sitemap:
   path: sitemap.xml

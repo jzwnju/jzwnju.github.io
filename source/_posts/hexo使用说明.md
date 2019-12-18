@@ -2,7 +2,7 @@
 title: hexo使用说明
 date: 2019-10-13 14:42:05
 tags: 其它
-thumbnail: /assets/images/front/thumbnails/1.jpg
+thumbnail: http://q2owh35dm.bkt.clouddn.com/1.jpg
 ---
 ## 简要流程
 ```bash

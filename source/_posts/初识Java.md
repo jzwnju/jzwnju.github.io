@@ -2,7 +2,7 @@
 title: 初识Java
 tags: 后端 JavaSE
 categories: 后端
-thumbnail: /assets/images/front/thumbnails/3.jpg
+thumbnail: http://q2owh35dm.bkt.clouddn.com/3.jpg
 date: 2019-12-13 21:30:20
 ---
 
