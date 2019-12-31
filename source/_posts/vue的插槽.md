@@ -3,7 +3,7 @@ title: vue的插槽
 categories: 前端
 tags: 前端 vue 知识点
 date: 2019-12-12 21:36:24
-thumbnail: http://q2owh35dm.bkt.clouddn.com/2.jpg
+thumbnail: https://wx2.sinaimg.cn/mw690/dff61755gy1gag0uuvpp0j20i20do42c.jpg
 ---
 
 
