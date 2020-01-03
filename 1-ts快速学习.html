@@ -7,22 +7,23 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>蒋志伟的个人网站</title>
+<title>1.ts快速学习 - 蒋志伟的个人网站</title>
 
 
-    <meta name="description" content="jiangzhiwei&apos;s blog 蒋志伟的个人博客">
-<meta name="keywords" content="jiangzhiwei 蒋志伟 blog 博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="蒋志伟的个人网站">
-<meta property="og:url" content="https://jiangzhiwei.cn/index.html">
+    <meta name="description" content="1.环境搭建1）安装ts 12345678910npm install -g typeScriptmkdir ts-study &amp;amp;&amp;amp; cd ts-studymkdir src &amp;amp;&amp;amp; touch src/index.tsnpm inittsc --init(初始化配置，生成tsconfig.json配置ts文件)">
+<meta name="keywords" content="TypeScript">
+<meta property="og:type" content="article">
+<meta property="og:title" content="1.ts快速学习">
+<meta property="og:url" content="https://jiangzhiwei.cn/1-ts快速学习.html">
 <meta property="og:site_name" content="蒋志伟的个人网站">
-<meta property="og:description" content="jiangzhiwei&apos;s blog 蒋志伟的个人博客">
+<meta property="og:description" content="1.环境搭建1）安装ts 12345678910npm install -g typeScriptmkdir ts-study &amp;amp;&amp;amp; cd ts-studymkdir src &amp;amp;&amp;amp; touch src/index.tsnpm inittsc --init(初始化配置，生成tsconfig.json配置ts文件)">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://jiangzhiwei.cn/images/og_image.png">
+<meta property="og:image" content="https://wx4.sinaimg.cn/mw690/dff61755gy1gaj5b21woej20i20c0go4.jpg">
+<meta property="og:updated_time" content="2020-01-03T07:08:07.229Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="蒋志伟的个人网站">
-<meta name="twitter:description" content="jiangzhiwei&apos;s blog 蒋志伟的个人博客">
-<meta name="twitter:image" content="https://jiangzhiwei.cn/images/og_image.png">
+<meta name="twitter:title" content="1.ts快速学习">
+<meta name="twitter:description" content="1.环境搭建1）安装ts 12345678910npm install -g typeScriptmkdir ts-study &amp;amp;&amp;amp; cd ts-studymkdir src &amp;amp;&amp;amp; touch src/index.tsnpm inittsc --init(初始化配置，生成tsconfig.json配置ts文件)">
+<meta name="twitter:image" content="https://wx4.sinaimg.cn/mw690/dff61755gy1gaj5b21woej20i20c0go4.jpg">
 
 
 
@@ -88,7 +89,7 @@ var _hmt = _hmt || [];
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/myAvatar.jpg" alt="蒋志伟的个人网站" height="28">
+                <img src="/images/myAvatar.jpg" alt="1.ts快速学习" height="28">
             
             </a>
         </div>
@@ -96,7 +97,7 @@ var _hmt = _hmt || [];
             
             <div class="navbar-start">
                 
-                <a class="navbar-item is-active"
+                <a class="navbar-item"
                 href="/">主页</a>
                 
                 <a class="navbar-item"
@@ -130,13 +131,12 @@ var _hmt = _hmt || [];
         <div class="container">
             <div class="columns">
                 <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
-    
 <div class="card">
     
     <div class="card-image">
-        <a href="/1-ts快速学习.html" class="image is-7by1">
+        <span  class="image is-7by1">
             <img class="thumbnail" src="https://wx4.sinaimg.cn/mw690/dff61755gy1gaj5b21woej20i20c0go4.jpg" alt="1.ts快速学习">
-        </a>
+        </span>
     </div>
     
     <div class="card-content article ">
@@ -162,263 +162,154 @@ var _hmt = _hmt || [];
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                <a class="has-link-black-ter" href="/1-ts快速学习.html">1.ts快速学习</a>
+                1.ts快速学习
             
         </h1>
         <div class="content">
             <h2 id="1-环境搭建"><a href="#1-环境搭建" class="headerlink" title="1.环境搭建"></a>1.环境搭建</h2><p>1）安装ts</p>
 <figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">npm install -g typeScript</span><br><span class="line"></span><br><span class="line">mkdir ts-study &amp;&amp; cd ts-study</span><br><span class="line"></span><br><span class="line">mkdir src &amp;&amp; touch src/index.ts</span><br><span class="line"></span><br><span class="line">npm init</span><br><span class="line"></span><br><span class="line">tsc --init</span><br><span class="line">(初始化配置，生成tsconfig.json配置ts文件)</span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
+<p>package.json中加入我们的script命令：</p>
+<figure class="highlight hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="hljs-attr">"name"</span>: <span class="hljs-string">"ts-study"</span>,</span><br><span class="line">  <span class="hljs-attr">"version"</span>: <span class="hljs-string">"1.0.0"</span>,</span><br><span class="line">  <span class="hljs-attr">"description"</span>: <span class="hljs-string">""</span>,</span><br><span class="line">  <span class="hljs-attr">"main"</span>: <span class="hljs-string">"src/index.ts"</span>,</span><br><span class="line">  <span class="hljs-attr">"scripts"</span>: &#123;</span><br><span class="line">    "build": "tsc", // 编译</span><br><span class="line">    "build:w": "tsc -w" // 监听文件，有变动即编译</span><br><span class="line">  &#125;,</span><br><span class="line">  "author": "",</span><br><span class="line">  "license": "ISC",</span><br><span class="line">  "devDependencies": &#123;</span><br><span class="line">    "TypeScript ": "^3.6.4"</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>tsconfig.json配置文件：</p>
+<figure class="highlight hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="hljs-attr">"compilerOptions"</span>: &#123;</span><br><span class="line">    "target": "es5",                            // 指定 ECMAScript 目标版本: 'ES5'</span><br><span class="line">    "module": "commonjs",                       // 指定使用模块: 'commonjs', 'amd', 'system', 'umd' or 'es2015'</span><br><span class="line">    "moduleResolution": "node",                 // 选择模块解析策略</span><br><span class="line">    "experimentalDecorators": true,             // 启用实验性的ES装饰器</span><br><span class="line">    "allowSyntheticDefaultImports": true,       // 允许从没有设置默认导出的模块中默认导入。</span><br><span class="line">    "sourceMap": true,                          // 把 ts 文件编译成 js 文件的时候，同时生成对应的 map 文件</span><br><span class="line">    "strict": true,                             // 启用所有严格类型检查选项</span><br><span class="line">    "noImplicitAny": true,                      // 在表达式和声明上有隐含的 any类型时报错</span><br><span class="line">    "alwaysStrict": true,                       // 以严格模式检查模块，并在每个文件里加入 'use strict'</span><br><span class="line">    "declaration": true,                        // 生成相应的.d.ts文件</span><br><span class="line">    "removeComments": true,                     // 删除编译后的所有的注释</span><br><span class="line">    "noImplicitReturns": true,                  // 不是函数的所有返回路径都有返回值时报错</span><br><span class="line">    "importHelpers": true,                      // 从 tslib 导入辅助工具函数</span><br><span class="line">    "lib": ["es6", "dom"],                      // 指定要包含在编译中的库文件</span><br><span class="line">    "typeRoots": ["node_modules/@types"],</span><br><span class="line">    "outDir": "./dist",</span><br><span class="line">    "rootDir": "./src"</span><br><span class="line">  &#125;,</span><br><span class="line">  "include": [                                  // 需要编译的ts文件一个*表示文件匹配**表示忽略文件的深度问题</span><br><span class="line">    <span class="hljs-string">"./src/**/*.ts"</span></span><br><span class="line">  ],</span><br><span class="line">  "exclude": [</span><br><span class="line">    "node_modules",</span><br><span class="line">    "dist",</span><br><span class="line">    "**/*.test.ts",</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-数据类型"><a href="#2-数据类型" class="headerlink" title="2.数据类型"></a>2.数据类型</h2><h3 id="1）原始类型"><a href="#1）原始类型" class="headerlink" title="1）原始类型"></a>1）原始类型</h3><p>TypeScript的原始类型包括: boolean、number、string、void、undefined、null、symbol、bigint。</p>
+<p>注意，开头是小写的，如果你在Typescript文件中写成 Boolean 那代表是 JavaScript 中的布尔对象，这是新手常犯的错误。</p>
+<h4 id="void"><a href="#void" class="headerlink" title="void:"></a>void:</h4><p>表示没有任何类型，当一个函数没有返回值时，你通常会见到其返回值类型是 void：</p>
+<figure class="highlight typescript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">hi</span>(<span class="hljs-params"></span>): <span class="hljs-title">void</span> </span>&#123;</span><br><span class="line">    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"hello world"</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">// 只有null和undefined可以赋给void</span></span><br><span class="line"><span class="hljs-keyword">const</span> a: <span class="hljs-built_in">void</span> = <span class="hljs-literal">undefined</span></span><br></pre></td></tr></table></figure>
+
+<p>默认情况下 null 和 undefined 是所有类型的子类型，就是说你可以把 null 和 undefined 赋值给 number 类型的变量。<br>但是在正式项目中一般都是开启 –strictNullChecks 检测的，即 null 和 undefined 只能赋值给 void 和它们各自。</p>
+<h3 id="2）顶级类型"><a href="#2）顶级类型" class="headerlink" title="2）顶级类型"></a>2）顶级类型</h3><h4 id="any"><a href="#any" class="headerlink" title="any:"></a>any:</h4><p>使用any类型来标记那些在编程阶段还不清楚类型的变量，使他们通过编译阶段的检查,比如来自用户输入或第三方代码库等动态内容。</p>
+<figure class="highlight typescript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">// 慎用any类型，它可能把Typescript变成AnyScript</span></span><br><span class="line"><span class="hljs-keyword">let</span> b: <span class="hljs-built_in">any</span> = <span class="hljs-number">4</span>;</span><br><span class="line">b = <span class="hljs-string">"maybe a string instead"</span>;</span><br></pre></td></tr></table></figure>
+
+<h4 id="unknown"><a href="#unknown" class="headerlink" title="unknown"></a>unknown</h4><p>unknown 是 TypeScript 3.0 引入了新类型,是 any 类型对应的安全类型。<br>unknown 和 any 的主要区别是 unknown 类型会更加严格:在对unknown类型的值执行大多数操作之前,我们必须进行某种形式的检查,而在对 any 类型的值执行操作之前,我们不必进行任何检查。<br>解释一下，虽然它们都可以是任何类型,但是当 unknown 类型被确定是某个类型之前,它不能被进行任何操作比如实例化、getter、函数执行等等。而 any 是可以的,这也是为什么说 unknown 是更安全的。<br>如果这么说不够形象，我们看下例子就明白了：</p>
+<p>相同点：</p>
+<figure class="highlight typescript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">let</span> value1: <span class="hljs-built_in">any</span>;</span><br><span class="line"></span><br><span class="line">value1 = <span class="hljs-literal">true</span>;             <span class="hljs-comment">// OK</span></span><br><span class="line">value1 = <span class="hljs-number">1</span>;                <span class="hljs-comment">// OK</span></span><br><span class="line">value1 = <span class="hljs-string">"Hello World"</span>;    <span class="hljs-comment">// OK</span></span><br><span class="line">value1 = Symbol(<span class="hljs-string">"type"</span>);   <span class="hljs-comment">// OK</span></span><br><span class="line">value1 = &#123;&#125;                <span class="hljs-comment">// OK</span></span><br><span class="line">value1 = [] </span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">// ***********************************************</span></span><br><span class="line"><span class="hljs-keyword">let</span> value2: unknown;</span><br><span class="line"></span><br><span class="line">value2 = <span class="hljs-literal">true</span>;             <span class="hljs-comment">// OK</span></span><br><span class="line">value2 = <span class="hljs-number">1</span>;                <span class="hljs-comment">// OK</span></span><br><span class="line">value2 = <span class="hljs-string">"Hello World"</span>;    <span class="hljs-comment">// OK</span></span><br><span class="line">value2 = Symbol(<span class="hljs-string">"type"</span>);   <span class="hljs-comment">// OK</span></span><br><span class="line">value2 = &#123;&#125;                <span class="hljs-comment">// OK</span></span><br><span class="line">value2 = []</span><br></pre></td></tr></table></figure>
+
+<p>不同点：</p>
+<figure class="highlight typescript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">let</span> value1: <span class="hljs-built_in">any</span>;</span><br><span class="line"></span><br><span class="line">value1.foo.bar;  <span class="hljs-comment">// OK</span></span><br><span class="line">value1();        <span class="hljs-comment">// OK</span></span><br><span class="line"><span class="hljs-keyword">new</span> value1();    <span class="hljs-comment">// OK</span></span><br><span class="line">value1[<span class="hljs-number">0</span>][<span class="hljs-number">1</span>];    <span class="hljs-comment">// OK</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">// *************************************************</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">let</span> value2: unknown;</span><br><span class="line"></span><br><span class="line">value2.foo.bar;  <span class="hljs-comment">// ERROR</span></span><br><span class="line">value2();        <span class="hljs-comment">// ERROR</span></span><br><span class="line"><span class="hljs-keyword">new</span> value2();    <span class="hljs-comment">// ERROR</span></span><br><span class="line">value2[<span class="hljs-number">0</span>][<span class="hljs-number">1</span>];    <span class="hljs-comment">// ERROR</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="3）底部类型"><a href="#3）底部类型" class="headerlink" title="3）底部类型"></a>3）底部类型</h3><h4 id="never"><a href="#never" class="headerlink" title="never"></a>never</h4><p>never 类型表示的是那些永不存在的值的类型，never 类型是任何类型的子类型，也可以赋值给任何类型；然而，没有类型是 never 的子类型或可以赋值给 never 类型，即使any也不可以赋值给never。（除了never本身之外）。</p>
+<p>example:</p>
+<figure class="highlight typescript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">// 抛出异常的函数永远不会有返回值</span></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">error</span>(<span class="hljs-params">message: <span class="hljs-built_in">string</span></span>): <span class="hljs-title">never</span> </span>&#123;</span><br><span class="line">    <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>(message);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">// 空数组，而且永远是空的</span></span><br><span class="line"><span class="hljs-keyword">const</span> empty: never[] = []</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-object"><a href="#4-object" class="headerlink" title="4)object"></a>4)object</h3><figure class="highlight typescript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">// 普通对象、枚举、数组、元组通通都是 object 类型</span></span><br><span class="line"><span class="hljs-keyword">enum</span> Color &#123;</span><br><span class="line">    red = <span class="hljs-number">1</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">let</span> value: object</span><br><span class="line"></span><br><span class="line">value = Color</span><br><span class="line">value = [<span class="hljs-number">1</span>]</span><br><span class="line">value = [<span class="hljs-number">1</span>, <span class="hljs-string">'hello'</span>]</span><br><span class="line">value = &#123;&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h4><figure class="highlight typescript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">// 两种定义方式：</span></span><br><span class="line"><span class="hljs-comment">// 1.使用泛型</span></span><br><span class="line"><span class="hljs-keyword">const</span> arr: <span class="hljs-built_in">Array</span>&lt;<span class="hljs-built_in">number</span>&gt; = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]</span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">// 2.在元素类型后面接上 []</span></span><br><span class="line"><span class="hljs-keyword">const</span> arr: <span class="hljs-built_in">number</span>[] = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]</span><br></pre></td></tr></table></figure>
+
+<h4 id="元组（Tuple）"><a href="#元组（Tuple）" class="headerlink" title="元组（Tuple）"></a>元组（Tuple）</h4><p>表示已知元素数量和类型，但各元素的类型不必相同的数组。(可看成严格版的数组)</p>
+<figure class="highlight typescript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">let</span> tuple: [<span class="hljs-built_in">string</span>, <span class="hljs-built_in">number</span>];</span><br><span class="line">tuple = [<span class="hljs-string">'hello'</span>, <span class="hljs-number">10</span>]; <span class="hljs-comment">// OK</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">// 元组的元素的数量、类型、顺序必须与定义一致，否则，就会报错。</span></span><br><span class="line">tuple = [<span class="hljs-string">'hello'</span>, <span class="hljs-number">10</span>, <span class="hljs-literal">false</span>] <span class="hljs-comment">// Error</span></span><br><span class="line">tuple = [<span class="hljs-string">'hello'</span>] <span class="hljs-comment">// Error</span></span><br><span class="line">tuple = [<span class="hljs-number">10</span>, <span class="hljs-string">'hello'</span>]; <span class="hljs-comment">// Error</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="枚举类型"><a href="#枚举类型" class="headerlink" title="枚举类型"></a>枚举类型</h4><h5 id="1）数字枚举（默认）"><a href="#1）数字枚举（默认）" class="headerlink" title="1）数字枚举（默认）"></a>1）数字枚举（默认）</h5><p>当我们声明一个枚举类型是,未赋值时默认是数字类型,而且默认从0开始依次累加。</p>
+<figure class="highlight typescript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">enum</span> Color &#123;</span><br><span class="line">    Red,</span><br><span class="line">    Blue,</span><br><span class="line">    Green,</span><br><span class="line">    Yellow</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="hljs-built_in">console</span>.log(Color.Red === <span class="hljs-number">0</span>); <span class="hljs-comment">// true</span></span><br><span class="line"><span class="hljs-built_in">console</span>.log(Color.Blue === <span class="hljs-number">1</span>); <span class="hljs-comment">// true</span></span><br><span class="line"><span class="hljs-built_in">console</span>.log(Color.Green === <span class="hljs-number">2</span>); <span class="hljs-comment">// true</span></span><br><span class="line"><span class="hljs-built_in">console</span>.log(Color.Yellow === <span class="hljs-number">3</span>); <span class="hljs-comment">// true</span></span><br></pre></td></tr></table></figure>
+
+<p>给第一个值赋值后，之后的值会根据第一个值进行累加。</p>
+<figure class="highlight typescript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">enum</span> Color &#123;</span><br><span class="line">    Red = <span class="hljs-number">3</span>,</span><br><span class="line">    Blue,</span><br><span class="line">    Green,</span><br><span class="line">    Yellow</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="hljs-built_in">console</span>.log(Color.Red === <span class="hljs-number">3</span>); <span class="hljs-comment">// true</span></span><br><span class="line"><span class="hljs-built_in">console</span>.log(Color.Blue === <span class="hljs-number">4</span>); <span class="hljs-comment">// true</span></span><br><span class="line"><span class="hljs-built_in">console</span>.log(Color.Green === <span class="hljs-number">5</span>); <span class="hljs-comment">// true</span></span><br><span class="line"><span class="hljs-built_in">console</span>.log(Color.Yellow === <span class="hljs-number">6</span>); <span class="hljs-comment">// true</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="2）字符串枚举"><a href="#2）字符串枚举" class="headerlink" title="2）字符串枚举"></a>2）字符串枚举</h5><figure class="highlight typescript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">enum</span> Color &#123;</span><br><span class="line">    Red = <span class="hljs-string">'Red'</span>,</span><br><span class="line">    Blue = <span class="hljs-string">'Blue'</span>,</span><br><span class="line">    Green = <span class="hljs-string">'Green'</span>,</span><br><span class="line">    Yellow = <span class="hljs-string">'Yellow'</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="hljs-built_in">console</span>.log(Color[<span class="hljs-string">'Red'</span>], Color.Blue); <span class="hljs-comment">// Red Blue</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="3-异构枚举（数字和字符串混合）"><a href="#3-异构枚举（数字和字符串混合）" class="headerlink" title="3)异构枚举（数字和字符串混合）"></a>3)异构枚举（数字和字符串混合）</h5><figure class="highlight typescript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">enum</span> Hybrid&#123;</span><br><span class="line">    Horse = <span class="hljs-number">0</span>,</span><br><span class="line">    Donkey = <span class="hljs-string">"donkey"</span>,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="补充：反向映射"><a href="#补充：反向映射" class="headerlink" title="补充：反向映射"></a>补充：反向映射</h5><p>JavaScript 对象一般都是正向映射的，即通过key可以取到value，枚举中，不但可以正向映射还可以反向映射。<br>通过枚举名字获取枚举值，反之，通过枚举值也可以获取到枚举名字</p>
+<figure class="highlight typescript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">enum</span> Color &#123;</span><br><span class="line">    Red = <span class="hljs-number">3</span>,</span><br><span class="line">    Blue,</span><br><span class="line">    Green,</span><br><span class="line">    Yellow</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="hljs-built_in">console</span>.log(Color.Red); <span class="hljs-comment">// 3</span></span><br><span class="line"><span class="hljs-built_in">console</span>.log(Color.[<span class="hljs-number">3</span>]); <span class="hljs-comment">// Red</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="补充：枚举的本质"><a href="#补充：枚举的本质" class="headerlink" title="补充：枚举的本质"></a>补充：枚举的本质</h5><p>为什么能够反向映射呢？看完枚举类型被编译成JavaScript之后我们就知道原因了：</p>
+<figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">var</span> Color;</span><br><span class="line">(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">Color</span>) </span>&#123;</span><br><span class="line">    Color[Color[<span class="hljs-string">"Red"</span>] = <span class="hljs-number">3</span>] = <span class="hljs-string">"Red"</span>;</span><br><span class="line">    Color[Color[<span class="hljs-string">"Blue"</span>] = <span class="hljs-number">4</span>] = <span class="hljs-string">"Blue"</span>;</span><br><span class="line">    Color[Color[<span class="hljs-string">"Green"</span>] = <span class="hljs-number">5</span>] = <span class="hljs-string">"Green"</span>;</span><br><span class="line">    Color[Color[<span class="hljs-string">"Yellow"</span>] = <span class="hljs-number">6</span>] = <span class="hljs-string">"Yellow"</span>;</span><br><span class="line">&#125;)(Color || (Color = &#123;&#125;));</span><br></pre></td></tr></table></figure>
+
+<p>原因就是枚举类型编译成特殊结构的对象，（如Color[Color[“Red”] = 3] = “Red”;）从而同时拥有了正反映射的特性。</p>
+
         </div>
         
-        
-        <div class="level is-mobile">
+        <div class="level is-size-7 is-uppercase">
             <div class="level-start">
                 <div class="level-item">
-                <a class="button is-size-7 is-light" href="/1-ts快速学习.html#more">阅读更多</a>
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/tags/TypeScript/">TypeScript</a>
                 </div>
             </div>
         </div>
         
+        
+        
+        <div class="social-share"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/css/share.min.css">
+<script src="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/js/social-share.min.js"></script>
         
     </div>
 </div>
 
 
 
-
-
-
-
-
-    
 <div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-01-02T14:23:49.000Z">2020-01-02</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/前端/">前端</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    3 分钟 读完 (大约 453 个字)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+    <div class="card-content">
+        <h3 class="menu-label has-text-centered">喜欢这篇文章？打赏一下作者吧</h3>
+        <div class="buttons is-centered">
             
-                <a class="has-link-black-ter" href="/css属性之position-sticky.html">css属性之position:sticky</a>
-            
-        </h1>
-        <div class="content">
-            <h2 id="回顾position属性其它内容"><a href="#回顾position属性其它内容" class="headerlink" title="回顾position属性其它内容"></a>回顾position属性其它内容</h2><p>position一共5中定位方式，即static，relative，absolute，fixed，sticky。</p>
-<p>static：默认位置，正常流，元素不重叠。<br>relative：配合top、bottom、left、right，相对该元素默认位置static进行偏移。<br>absolute：配合top、bottom、left、right，相对于不为static的父级元素。<br>fixed：配合top、bottom、left、right，相对于视口(viewport，浏览器窗口)。</p>
+                
+<a class="button is-info donate">
+    <span class="icon is-small">
+        <i class="fab fa-alipay"></i>
+    </span>
+    <span>支付宝</span>
+    <div class="qrcode"><img src="http://q2owh35dm.bkt.clouddn.com/alipay.jpg" alt="支付宝"></div>
+</a>
+
+                
+                
+<a class="button is-success donate">
+    <span class="icon is-small">
+        <i class="fab fa-weixin"></i>
+    </span>
+    <span>微信</span>
+    <div class="qrcode"><img src="http://q2owh35dm.bkt.clouddn.com/wechat.png" alt="微信"></div>
+</a>
+
+                
         </div>
+    </div>
+</div>
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
         
         
-        <div class="level is-mobile">
-            <div class="level-start">
-                <div class="level-item">
-                <a class="button is-size-7 is-light" href="/css属性之position-sticky.html#more">阅读更多</a>
-                </div>
-            </div>
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/css属性之position-sticky.html">
+                <span class="level-item">css属性之position:sticky</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
         </div>
-        
         
     </div>
 </div>
 
 
 
-
-
-
-
-
-    
 <div class="card">
-    
-    <div class="card-image">
-        <a href="/初识Java.html" class="image is-7by1">
-            <img class="thumbnail" src="https://wx3.sinaimg.cn/mw690/dff61755gy1gag0x494f0j20i20c20u2.jpg" alt="初识Java">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
+    <div class="card-content">
+        <h3 class="title is-5 has-text-weight-normal">评论</h3>
         
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-12-13T13:30:20.000Z">2019-12-13</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/后端/">后端</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    3 分钟 读完 (大约 479 个字)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/初识Java.html">初识Java</a>
-            
-        </h1>
-        <div class="content">
-            <h2 id="1-简介"><a href="#1-简介" class="headerlink" title="1. 简介"></a>1. 简介</h2><p>Java是跨平台语言，运行在虚拟机JVM上，JVM又运行在相应的系统上。<br>开发我们需要先安装JDK（java delelopment kit），即Java开发工具包，其中包括了JVM，也包括了JRE（java runtime environment）Java运行环境。</p>
-<p>JavaSE: 标准版，定义了Java的基本语法。<br>JavaME：移动版，现已基本不用，用在GPS导航、机顶盒、塞班系统等。<br>JavaEE: 企业版，如用JavaWeb开发企业级B/S架构应用。</p>
-        </div>
-        
-        
-        <div class="level is-mobile">
-            <div class="level-start">
-                <div class="level-item">
-                <a class="button is-size-7 is-light" href="/初识Java.html#more">阅读更多</a>
-                </div>
-            </div>
-        </div>
-        
-        
+<div id="valine-thread" class="content"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+<script>
+    new Valine({
+        el: '#valine-thread' ,
+        notify: false,
+        verify: false,
+        app_id: 'YBaknCd9gxOKiiyS9UYXOh5k-gzGzoHsz',
+        app_key: 'Bm9h6VVbcnoBmC33AsD99Fgz',
+        placeholder: '来，说两句儿~'
+    });
+</script>
+
     </div>
 </div>
-
-
-
-
-
-
-
-
-    
-<div class="card">
-    
-    <div class="card-image">
-        <a href="/vue的插槽.html" class="image is-7by1">
-            <img class="thumbnail" src="https://wx2.sinaimg.cn/mw690/dff61755gy1gag0uuvpp0j20i20do42c.jpg" alt="vue的插槽">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-12-12T13:36:24.000Z">2019-12-12</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/前端/">前端</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    3 分钟 读完 (大约 378 个字)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/vue的插槽.html">vue的插槽</a>
-            
-        </h1>
-        <div class="content">
-            <h2 id="1-v-slot"><a href="#1-v-slot" class="headerlink" title="1. v-slot"></a>1. v-slot</h2><p>vue插槽有两种：具名插槽和作用域插槽，2.6.0以后，使用新语法v-slot指令（缩写为#）将两种语法统一起来。</p>
-<p>老旧的语法，这里不再赘述，参见vue官网。下面讲讲新语法的用法。</p>
-        </div>
-        
-        
-        <div class="level is-mobile">
-            <div class="level-start">
-                <div class="level-item">
-                <a class="button is-size-7 is-light" href="/vue的插槽.html#more">阅读更多</a>
-                </div>
-            </div>
-        </div>
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    
-<div class="card">
-    
-    <div class="card-image">
-        <a href="/hexo使用说明.html" class="image is-7by1">
-            <img class="thumbnail" src="https://wx1.sinaimg.cn/mw690/dff61755gy1gag0hmfr00j20i20c1wgm.jpg" alt="hexo使用说明">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-10-13T06:42:05.000Z">2019-10-13</time>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    5 分钟 读完 (大约 684 个字)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/hexo使用说明.html">hexo使用说明</a>
-            
-        </h1>
-        <div class="content">
-            <h2 id="简要流程"><a href="#简要流程" class="headerlink" title="简要流程"></a>简要流程</h2><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br><span class="line">hexo new &lt;title&gt;</span><br><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-        </div>
-        
-        
-        <div class="level is-mobile">
-            <div class="level-start">
-                <div class="level-item">
-                <a class="button is-size-7 is-light" href="/hexo使用说明.html#more">阅读更多</a>
-                </div>
-            </div>
-        </div>
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
 </div>
                 
 
@@ -1012,7 +903,7 @@ var _hmt = _hmt || [];
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/myAvatar.jpg" alt="蒋志伟的个人网站" height="28">
+                    <img src="/images/myAvatar.jpg" alt="1.ts快速学习" height="28">
                 
                 </a>
                 <p class="is-size-7">

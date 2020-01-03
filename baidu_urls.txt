@@ -1,3 +1,4 @@
+https://jiangzhiwei.cn/1-ts快速学习.html
 https://jiangzhiwei.cn/css属性之position-sticky.html
 https://jiangzhiwei.cn/初识Java.html
 https://jiangzhiwei.cn/vue的插槽.html
