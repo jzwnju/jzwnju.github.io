@@ -3,6 +3,7 @@ title: 'css属性之position:sticky'
 tags: css
 categories: 前端
 date: 2020-01-02 22:23:49
+thumbnail: '../assets/img/thumbnails/3.jpg'
 ---
 
 

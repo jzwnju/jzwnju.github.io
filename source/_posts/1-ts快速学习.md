@@ -2,7 +2,7 @@
 title: 1.ts快速学习
 tags: TypeScript
 categories: 前端
-thumbnail: 'https://wx4.sinaimg.cn/mw690/dff61755gy1gaj5b21woej20i20c0go4.jpg'
+thumbnail: '../assets/img/thumbnails/5.jpg'
 date: 2020-01-03 21:06:57
 ---
 

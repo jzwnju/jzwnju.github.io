@@ -2,7 +2,7 @@
 title: 初识Java
 tags: Java
 categories: 后端
-thumbnail: https://wx3.sinaimg.cn/mw690/dff61755gy1gag0x494f0j20i20c20u2.jpg
+thumbnail: '../assets/img/thumbnails/4.jpg'
 date: 2019-12-13 21:30:20
 ---
 
