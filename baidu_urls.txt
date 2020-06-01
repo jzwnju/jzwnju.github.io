@@ -1,6 +1,9 @@
 https://jiangzhiwei.cn/2-ts%E5%BF%AB%E9%80%9F%E5%AD%A6%E4%B9%A0.html
 https://jiangzhiwei.cn/1-ts%E5%BF%AB%E9%80%9F%E5%AD%A6%E4%B9%A0.html
 https://jiangzhiwei.cn/css%E5%B1%9E%E6%80%A7%E4%B9%8Bposition-sticky.html
-https://jiangzhiwei.cn/%E5%88%9D%E8%AF%86Java.html
+https://jiangzhiwei.cn/Java-1%E5%88%9D%E8%AF%86Java.html
 https://jiangzhiwei.cn/vue%E7%9A%84%E6%8F%92%E6%A7%BD.html
 https://jiangzhiwei.cn/hexo%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E.html
+https://jiangzhiwei.cn/Java-4%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6.html
+https://jiangzhiwei.cn/Java-3%E8%BF%90%E7%AE%97%E7%AC%A6.html
+https://jiangzhiwei.cn/Java-2%E5%8F%98%E9%87%8F.html
